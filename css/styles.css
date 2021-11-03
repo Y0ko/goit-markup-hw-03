@@ -1,0 +1,256 @@
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #212121;
+  --accent-color: #18a0fb;
+  --hover-color: #c91ae0;
+  --button-color: #2196f3;
+  --praymary-white-color: #ffffff;
+  --secondary-gray-color: #2f303a;
+  --text-white-color: #ffffff;
+  --bg-color: #e5e5e5;
+  --textarea-color: #757575;
+  --test-color: #ccec12;
+}
+body {
+  font-family: Roboto;
+  background-color: var(--bg-color);
+  font-style: normal;
+}
+li {
+  list-style-type: none;
+}
+.logo a:hover,
+.logo a:focus {
+  color: var(--test-color);
+}
+.nav a {
+  color: var(--accent-color);
+}
+.nav a:hover,
+.nav a:focus {
+  color: var(--hover-color);
+}
+
+.nav {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
+.nav .logo {
+  color: var(--title-text-color);
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+.nav-in {
+  position: absolute;
+  width: 49px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.nav-port {
+  position: absolute;
+  width: 77px;
+  height: 16px;
+  left: 552px;
+  top: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.nav-cont {
+  position: absolute;
+  width: 68px;
+  height: 16px;
+  left: 679px;
+  top: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.mail {
+  position: absolute;
+  width: 135px;
+  height: 16px;
+  left: 1078px;
+  top: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--textarea-color);
+}
+.tel {
+  position: absolute;
+  width: 122px;
+  height: 16px;
+  left: 1263px;
+  top: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--textarea-color);
+}
+
+.auth-nav a:hover {
+  color: var(--hover-color);
+}
+.auth-nav a:focus {
+  color: var(--test-color);
+}
+/*------------hero-------------*/
+.hero {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: var(--secondary-gray-color);
+}
+.hero-title {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 200px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  color: var(--text-white-color);
+}
+.hero > button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 350px;
+
+  background: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.button {
+  color: var(--title-text-color);
+  background: var(--praymary-white-color);
+  cursor: pointer;
+}
+.button.primary {
+  background-color: var(--button-color);
+  color: var(--praymary-white-color);
+}
+
+/*----------НАШИ ПРЕИМУЩЕСТВА---------*/
+.special {
+  padding-top: 600px;
+}
+.selection {
+  display: none;
+}
+.special-items {
+  display: flex;
+  justify-content: space-between;
+  /*margin-left: 30px;*/
+}
+.special-item-title {
+  font-weight: 700px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.special-item-text {
+  display: block;
+  width: 270px;
+  color: var (--textarea-color);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.container {
+  text-align: center;
+}
+/*-------ЧЕМ ЗАНИМАЕМСЯ-------------*/
+.box {
+  padding-top: 94px;
+}
+.caption {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.caption-item {
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  display: flex;
+  width: 370px;
+  height: 294px;
+}
+/*-------КОМАНДА-------------*/
+.team {
+  padding-top: 94px;
+}
+.team-caption {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.team-item {
+  display: flex;
+  justify-content: space-between;
+}
+.caption-team.caption-team-text {
+  font-weight: 700px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.images {
+  height: 300px;
+  width: auto;
+}
+
+/*-------------FOOTER--------------*/
+.footer {
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  font-weight: 648px;
+  background: var(--secondary-gray-color);
+}
+.footer {
+  color: var(--text-white-color);
+}
+.footer a {
+  color: var(--text-white-color);
+}
+.footer a:hover {
+  color: var(--hover-color);
+}
+.footer :focus {
+  color: orange;
+}
