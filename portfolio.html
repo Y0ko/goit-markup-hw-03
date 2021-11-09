@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="nav-flex">
       <nav class="nav">
-        <a href="./index.html" class="logo">WebStudio</a>
+        <a href="./index.html" class="logo"> <span class="span-web">Web</span>Studio</a>
         <ul class="site-nav">
-          <li><a class="nav-in" href="./index.html">Студия</a></li>
-          <li><a class="nav-port" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="nav-cont" href="#0">Контакти</a></li>
+          <li><a class="nav-link" href="./index.html">Студия</a></li>
+          <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="nav-link" href="#0">Контакти</a></li>
         </ul>
       </nav>
       <ul class="auth-nav">
@@ -22,68 +28,123 @@
         <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11 </a></li>
       </ul>
     </header>
-    <button type="button">
-      <img class="button secondary" src="#0" alt="Все" width="200" />
-    </button>
-    <button type="button">
-      <img class="button secondary" src="#0" alt="Веб-сайты " width="200" />
-    </button>
-    <button type="button">
-      <img class="button secondary" src="#0" alt="Приложения" width="200" />
-    </button>
-    <button type="button">
-      <img class="button secondary" src="#0" alt="Дизайн" width="200" />
-    </button>
-    <button type="button">
-      <img class="button secondary" src="#0" alt="Маркетинг" width="200" />
-    </button>
-    <ul>
-      <!--Технокряк-->
-      <li><img src="./images/8.jpg" alt="Портфоліо відкрите на ноутбукові" width="370" /></li>
-      <li><h3>Технокряк</h3></li>
-      <li><p>Веб-сайт</p></li>
-      <!--Постер-->
-      <li><img src="./images/9.jpg" alt="Постер" width="370" /></li>
-      <li><h3>Постер New Orlean vs Golden Star</h3></li>
-      <li><p>Дизайн</p></li>
-      <!--Лого ресторану-->
-      <li><img src="./images/10.jpg" alt="Логотип ресторану" width="370" /></li>
-      <li><h3>Ресторан Seafood</h3></li>
-      <li><p>Приложение</p></li>
-      <!--Проект Prime-->
-      <li><img src="./images/11.jpg" alt="Навушники" width="370" /></li>
-      <li><h3>Проект Prime</h3></li>
-      <li><p>Маркетинг</p></li>
-      <!--Проект Boxes-->
-      <li><img src="./images/12.jpg" alt="Дві коробки" width="370" /></li>
-      <li><h3>Проект Boxes</h3></li>
-      <li><p>Приложение</p></li>
-      <!--Inspiration has no Borders-->
-      <li><img src="./images/13.jpg" alt="Монітор з відкритим сайтом" width="370" /></li>
-      <li><h3>Inspiration has no Borders</h3></li>
-      <li><p>Веб-сайт</p></li>
-      <!--Издание Limited Edition-->
-      <li><img src="./images/14.jpg" alt="Відкрита кннига" width="370" /></li>
-      <li><h3>Издание Limited Edition</h3></li>
-      <li><p>Дизайн</p></li>
-      <!--Проект LAB-->
-      <li><img src="./images/15.jpg" alt="Вивіска з написом LAB EL TAG" width="370" /></li>
-      <li><h3>Проект LAB</h3></li>
-      <li><p>Маркетинг</p></li>
-      <!--Growing Business-->
-      <li><img src="./images/16.jpg" alt="Робота за пк" width="370" /></li>
-      <li><h3>Growing Business</h3></li>
-      <li><p>Приложение</p></li>
+    <ul class="filter">
+      <li class="filter-item">
+        <button type="button" class="buttons">
+          <img class="fitler button" src="#0" alt="Все" width="200" />
+        </button>
+      </li>
+      <li>
+        <button type="button" class="buttons">
+          <img class="fitler button" src="#0" alt="Веб-сайты " width="200" />
+        </button>
+      </li>
+      <li>
+        <button type="button" class="buttons">
+          <img class="fitler button" src="#0" alt="Приложения" width="200" />
+        </button>
+      </li>
+      <li>
+        <button type="button" class="buttons">
+          <img class="fitler button" src="#0" alt="Дизайн" width="200" />
+        </button>
+      </li>
+      <li>
+        <button type="button" class="buttons">
+          <img class="fitler button" src="#0" alt="Маркетинг" width="200" />
+        </button>
+      </li>
     </ul>
+    <!--Технокряк-->
+    <section class="carditem">
+      <div class="container">
+        <ul class="cards">
+          <li class="card">
+            <img
+              class="card-img"
+              src="./images/8.jpg"
+              alt="Портфоліо відкрите на ноутбукові"
+              width="370"
+            />
+            <h3 class="card-item">Технокряк</h3>
+            <p class="card-items">Веб-сайт</p>
+          </li>
+          <!--Постер-->
+          <li>
+            <img class="card-img" src="./images/9.jpg" alt="Постер" width="370" />
+            <h3 class="card-item">Постер New Orlean vs Golden Star</h3>
+            <p class="card-items">Дизайн</p>
+          </li>
+          <!--Лого ресторану-->
+          <li>
+            <img class="card-img" src="./images/10.jpg" alt="Логотип ресторану" width="370" />
+            <h3 class="card-item">Ресторан Seafood</h3>
+            <p class="card-items">Приложение</p>
+          </li>
+          <!--Проект Prime-->
+          <li>
+            <img class="card-img" src="./images/11.jpg" alt="Навушники" width="370" />
+            <h3 class="card-item">Проект Prime</h3>
+            <p class="card-items">Маркетинг</p>
+          </li>
+
+          <!--Проект Boxes-->
+          <li>
+            <img class="card-img" src="./images/12.jpg" alt="Дві коробки" width="370" />
+            <h3 class="card-item">Проект Boxes</h3>
+            <p class="card-items">Приложение</p>
+          </li>
+          <!--Inspiration has no Borders-->
+          <li>
+            <img
+              class="card-img"
+              src="./images/13.jpg"
+              alt="Монітор з відкритим сайтом"
+              width="370"
+            />
+            <h3 class="card-item">Inspiration has no Borders</h3>
+            <p class="card-items">Веб-сайт</p>
+          </li>
+
+          <!--Издание Limited Edition-->
+          <li>
+            <img class="card-img" src="./images/14.jpg" alt="Відкрита кннига" width="370" />
+            <h3 class="card-item">Издание Limited Edition</h3>
+            <p class="card-items">Дизайн</p>
+          </li>
+          <!--Проект LAB-->
+          <li>
+            <img
+              class="card-img"
+              src="./images/15.jpg"
+              alt="Вивіска з написом LAB EL TAG"
+              width="370"
+            />
+            <h3 class="card-item">Проект LAB</h3>
+            <p class="card-items">Маркетинг</p>
+          </li>
+          <!--Growing Business-->
+          <li>
+            <img class="card-img" src="./images/16.jpg" alt="Робота за пк" width="370" />
+            <h3 class="card-item">Growing Business</h3>
+            <p class="card-items">Приложение</p>
+          </li>
+        </ul>
+      </div>
+    </section>
     <footer class="footer">
       <p>
-        <a href="./index.html">WebStudio</a>
+        <a class="logo" href="./index.html"><span class="span-web">Web</span>Studio </a>
       </p>
       <address>
-        <ul>
+        <ul class="addres">
           <li>г.Киев, пр-т Леси Украинки, 26</li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li>
+            <a href="tel:+380991111111">+38 099 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
