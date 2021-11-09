@@ -58,10 +58,10 @@ li {
 .nav-flex {
   display: flex;
   justify-content: space-between;
+  border: 1px solid #ececec;
 }
 .nav {
   display: flex;
-  border: 1px solid #ececec;
 }
 .site-nav {
   display: flex;
@@ -91,7 +91,10 @@ li {
 }
 .mail,
 .tel {
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: 122px;
+  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
