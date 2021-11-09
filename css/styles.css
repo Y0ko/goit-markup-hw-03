@@ -55,15 +55,15 @@ li {
 .nav a:focus {
   color: var(--button-color);
 }
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+}
 .nav {
   display: flex;
   border: 1px solid #ececec;
 }
 .site-nav {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-flex {
   display: flex;
   justify-content: space-between;
 }
