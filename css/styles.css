@@ -15,21 +15,45 @@
   --Web-span-text: #2196f3;
   --title-hover: #188ce8;
 }
-body {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--title-text-color);
-  font-style: normal;
-  font-weight: 400;
-  max-width: 1600px;
-  margin: 0 auto;
+button {
+  border: 0;
 }
-a {
-  cursor: pointer;
+ul li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--firstFontColor);
+  font-size: 14px;
+  line-height: 1.2;
+}
+.link {
   text-decoration: none;
 }
-li {
-  list-style-type: none;
+.link:focus,
+.link:hover {
+  color: var(--button-color);
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .visually-hidden {
   position: absolute;
@@ -55,15 +79,16 @@ li {
 .nav a:focus {
   color: var(--button-color);
 }
-.nav-flex {
+.header {
   /* display: flex;
   justify-content: space-between;*/
   border: 1px solid #ececec;
 }
 .container {
   width: 1200px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header-container {
   display: flex;
@@ -76,55 +101,61 @@ li {
   align-items: center;
 }
 
-.site-nav {
+.navigation {
   display: flex;
   /*justify-content: space-between;*/
 }
 
-.nav .logo {
+.header .logo {
   font-family: Raleway;
   color: var(--title-text-color);
-  padding: 10px 50px;
-
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.menu-logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
 }
 
 .nav-link {
-  margin: 0 auto;
-  padding: 0px 50px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 
-.auth-nav li {
+.contacts {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-left: auto;
 }
-
-.auth-nav a:hover {
-  color: var(--button-color);
+.contact-item:not(:last-child) {
+  margin-right: 50px;
 }
-
-.auth-nav a:focus {
-  color: var(--button-color);
-}
-
 .header-connect {
   margin-left: auto;
 }
+/*.contact-item a:hover {
+  color: var(--button-color);
+}
 
-.mail,
-.tel {
-  /*padding-top: 16px;
-  padding-bottom: 16px;
-  margin-left: 122px;
-  margin-right: 50px;*/
+.contact-item a:focus {
+  color: var(--button-color);
+}*/
+.contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
