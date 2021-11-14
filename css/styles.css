@@ -54,8 +54,10 @@ body {
   color: var(--button-color);
 }
 .section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  /*margin-top: 94px;
+  margin-bottom: 94px;*/
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .visually-hidden {
   position: absolute;
