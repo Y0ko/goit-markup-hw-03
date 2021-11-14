@@ -14,6 +14,7 @@
   --filter-color-text: #f5f4fa;
   --Web-span-text: #2196f3;
   --title-hover: #188ce8;
+  --btn-bgr: #f5f4fa;
 }
 button {
   border: 0;
@@ -43,6 +44,7 @@ body {
   color: var(--firstFontColor);
   font-size: 14px;
   line-height: 1.2;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -283,22 +285,27 @@ body {
 /*-------section1------*/
 .filter {
   display: flex;
-  justify-content: space-between;
-  max-width: 585px;
-  margin: 0 auto;
-  padding-top: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.buttons:hover,
-.buttons:focus {
-  background-color: var(--button-color);
-  color: var(--praymary-white-color);
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
-
-.buttons {
+.filter-btn {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
   font-weight: 500;
-  line-height: 1.6;
-  background: var(--filter-color-text);
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  background-color: var(--btn-bgr);
   color: var(--title-text-color);
+}
+.filter-btn:focus,
+.filter-btn:hover {
+  color: var(--praymary-white-color);
+  background-color: var(--button-color);
   cursor: pointer;
 }
 /*-------section2------*/
@@ -308,7 +315,6 @@ body {
   flex-wrap: wrap;
   align-content: center;
   margin-top: 50px;
-  margin: 50px;
 }
 .card-item {
   font-weight: 700;
