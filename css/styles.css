@@ -280,6 +280,7 @@ body {
 }
 
 /*------------PORTFOLIO-------------*/
+/*-------section1------*/
 .filter {
   display: flex;
   justify-content: space-between;
@@ -300,6 +301,7 @@ body {
   color: var(--title-text-color);
   cursor: pointer;
 }
+/*-------section2------*/
 .cards {
   display: flex;
   justify-content: space-between;
