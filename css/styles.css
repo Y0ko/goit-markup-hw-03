@@ -3,7 +3,6 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --title-text-color: #212121;
   --accent-color: #18a0fb;
-  --hover-color: #c91ae0;
   --button-color: #2196f3;
   --praymary-white-color: #ffffff;
   --secondary-gray-color: #2f303a;
@@ -47,6 +46,12 @@ body {
   margin: 0;
   min-width: 1200px;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .link {
   text-decoration: none;
 }
@@ -55,8 +60,6 @@ body {
   color: var(--button-color);
 }
 .section {
-  /*margin-top: 94px;
-  margin-bottom: 94px;*/
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -89,12 +92,7 @@ body {
   justify-content: space-between;*/
   border: 1px solid #ececec;
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -316,15 +314,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  margin-left: -20px;
+  margin-bottom: -20px;
 }
 .card {
-  border: 1px solid #eeeeee;
-  flex-basis: calc((100%-3 * 30px) / 3);
-  margin-left: 30px;
+   flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-left: 20px;
+  margin-bottom: 20px;
+   border: 1px solid #eeeeee;
 }
+/*
 .card:nth-child(3n) {
   margin-left: 0;
-}
+}*/
 .card-item {
   font-weight: 700;
   font-size: 18px;
@@ -340,8 +342,8 @@ body {
 }
 .card-img {
   display: flex;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: auto
   margin-right: 0;
 }
 
