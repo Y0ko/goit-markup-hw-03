@@ -45,6 +45,7 @@ body {
   font-size: 14px;
   line-height: 1.2;
   margin: 0;
+  min-width: 1200px;
 }
 .link {
   text-decoration: none;
@@ -146,9 +147,9 @@ body {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.header-connect {
+/*.header-connect {
   margin-left: auto;
-}
+}*/
 /*.contact-item a:hover {
   color: var(--button-color);
 }
@@ -313,10 +314,16 @@ body {
 /*-------section2------*/
 .cards {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
-  margin-top: 50px;
+}
+.card {
+  border: 1px solid #eeeeee;
+  flex-basis: calc((100%-3 * 30px) / 3);
+  margin-left: 30px;
+}
+.card:nth-child(3n) {
+  margin-left: 0;
 }
 .card-item {
   font-weight: 700;
@@ -331,11 +338,11 @@ body {
   font-weight: 400;
   line-height: 1.9;
 }
-
 .card-img {
   display: flex;
   width: 370px;
   height: 294px;
+  margin-right: 0;
 }
 
 /*-------------FOOTER--------------*/
