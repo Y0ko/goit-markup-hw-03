@@ -56,17 +56,31 @@ li {
   color: var(--button-color);
 }
 .nav-flex {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between;*/
   border: 1px solid #ececec;
 }
-.nav {
-  display: flex;
+.container {
+  width: 1200px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
-.site-nav {
+.header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
 .nav .logo {
   font-family: Raleway;
   color: var(--title-text-color);
@@ -77,6 +91,7 @@ li {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .nav-link {
   margin: 0 auto;
   padding: 0px 50px;
@@ -85,28 +100,36 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.auth-nav {
+
+.auth-nav li {
   display: flex;
   justify-content: space-between;
-}
-.mail,
-.tel {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-left: 122px;
-  margin-right: 50px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  color: var(--textarea-color);
+  align-items: center;
 }
 
 .auth-nav a:hover {
   color: var(--button-color);
 }
+
 .auth-nav a:focus {
   color: var(--button-color);
+}
+
+.header-connect {
+  margin-left: auto;
+}
+
+.mail,
+.tel {
+  /*padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: 122px;
+  margin-right: 50px;*/
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--textarea-color);
 }
 /*------------hero-------------*/
 .hero {
@@ -166,9 +189,7 @@ li {
   letter-spacing: 0.03em;
   font-weight: 400;
 }
-.container {
-  text-align: left;
-}
+
 /*-------ЧЕМ ЗАНИМАЕМСЯ-------------*/
 .our-work {
   padding-top: 10px;
